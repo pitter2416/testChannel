@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>公司内部应用下载</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body { font-family: Arial; max-width: 800px; margin: 0 auto; padding: 20px; }
+        .card { background: #f9f9f9; padding: 20px; border-radius: 8px; margin-top: 20px; }
+        .btn { display: inline-block; padding: 10px 20px; background: #007AFF; 
+               color: white; text-decoration: none; border-radius: 6px; }
+    </style>
+</head>
+<body>
+    <h1>公司内部应用下载</h1>
+    
+    <div class="card">
+        <h2>开发测试版 v1.0.0</h2>
+        <p>Build: 20231115.1</p>
+        <a href="itms-services://?action=download-manifest&url=http://192.168.8.105:8080/manifest.plist" class="btn">
+            安装应用
+        </a>
+        <p style="color: red;">注意：首次使用需信任企业证书</p>
+    </div>
+    
+    <div class="card">
+        <h3>安装说明</h3>
+        <ol>
+            <li>点击上方"安装应用"按钮</li>
+            <li>系统会提示安装确认，点击"安装"</li>
+            <li>返回主屏幕等待安装完成</li>
+            <li>首次打开前:
+                <ul>
+                    <li>前往"设置" > "通用" > "VPN与设备管理"</li>
+                    <li>找到"企业级应用"下的公司证书</li>
+                    <li>点击"信任[公司名称]"</li>
+                </ul>
+            </li>
+        </ol>
+    </div>
+</body>
+</html>

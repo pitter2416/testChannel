@@ -3,22 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>红包乐app</title>
+    <title>测试安装渠道</title>
     <script src="https://g.alicdn.com/jssdk/u-link/index.min.js"></script>
 </head>
 
 <body>
-    <button id="xxl">点我唤起</button>
-
-
+    <button id="btn_link">点我唤起</button>
     <script>
         ULink([{
-            id: "usr1frqs9s6soh8g",
-            data: {
-                tel: 17198642416,
-                name: "chentuanhui",
+            id: "usr1frqs9s6soh8g", //对应裂变营销创建的活动LinkID
+            data: {// 自定义参数，目前没用到可以不传
+                param1: 1, 
+                param2: "1",
             },
-            selector: "#xxl",
+            selector: "#btn_link",
             useOpenInBrowerTips: "default",
             proxyOpenDownload: function (defaultAction, LinkInstance) {
                 if (LinkInstance.solution.type === "scheme") {
@@ -32,7 +30,7 @@
                 } else if (LinkInstance.solution.type === "universalLink") {
                     // universalLink 唤起应当由服务端提供一个带重定向到appstore的universallink地址。因此，此处不应写逻辑，友盟已于6月2日上线universalLink生成及重定向功能。
                 }
-            }
+            },
         },
         ]);
     </script>
