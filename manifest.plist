@@ -11,7 +11,7 @@
                     <key>kind</key>
                     <string>software-package</string>
                     <key>url</key>
-                    <string>http://192.168.8.105:8080/xiongliao.ipa</string>
+                    <string>http://192.168.8.113:8080/redpacket.ipa</string>
                 </dict>
                 <dict>
                     <key>kind</key>
@@ -29,7 +29,7 @@
             <key>metadata</key>
             <dict>
                 <key>bundle-identifier</key>
-                <string>com.chatgpt168</string>
+                <string>com.hongbaole.myredpacket</string>
                 <key>bundle-version</key>
                 <string>1.0.0</string>
                 <key>kind</key>
